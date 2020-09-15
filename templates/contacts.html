@@ -1,0 +1,6 @@
+{% extends "base.html"%} {% block link %}{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"> {% endblock %} {% block title %}Contacts{% endblock %} {% block content %}
+<h1>Contacts</h1>
+<p class="story"><i>Email:</i>{{email}}<br><b>Phone:</b> {{phone}}</p>
+<p class="story">Server time: {{time}}</p>
+{% endblock %}

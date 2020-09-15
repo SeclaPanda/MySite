@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8"> {% block link %} {% endblock %} {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>{% block title %}{% endblock %} - My site</title>
+</head>
+
+<body>
+    <a class="lin" href="/"> Home </a>
+    <a class="lin" href="/index"> Hello </a>
+    <a class="lin" href="/contacts"> Way to find me </a>
+    <a class="lin" href="/publications"> Publications </a>
+    <a class="lin" href="/publication"> Publication </a> {% block content %} {% endblock %}
+</body>
+
+<footer>
+    <a class="fot">Copyright - Alex 'Secla' Baklashkin. Moscow, Russia. 2020</a>
+</footer>
+
+</html>

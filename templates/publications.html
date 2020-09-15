@@ -1,0 +1,18 @@
+{% extends "base.html"%} {% block link %}{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"> {% endblock %} {% block title %}{{ title }}{% endblock %} {% block content %}
+<h1>Publications</h1>
+<table>
+    <tr>
+        <td>1</td>
+        <td>Name</td>
+        <td>Date/Link</td>
+    </tr>
+    {% for pub in publications %}
+    <tr>
+        <td>1</td>
+        <td>{{pub.name}}</td>
+        <td>{{pub.date}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
