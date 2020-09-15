@@ -3,14 +3,14 @@ body {
     /* Семейство шрифтов */
     font-size: 11pt;
     /* Размер основного шрифта в пунктах  */
-    background-color: aquamarine;
+    background-color: #a6a6a6;
     /* Цвет фона веб-страницы */
-    color: rgb(0, 0, 0);
+    color: #000;
     /* Цвет основного текста */
 }
 
 h1 {
-    color: #800020;
+    color: #5a5a5a;
     /* Цвет заголовка */
     font-size: 24pt;
     /* Размер шрифта в пунктах */
@@ -29,25 +29,26 @@ h1 {
     /* Отступ справа в пикселах */
     border-left: 1px solid rgb(0, 0, 0);
     /* Параметры линии слева */
-    border-bottom: 1px solid rgb(0, 0, 0);
+    /*border-bottom: 1px solid rgb(0, 0, 0);*/
     /* Параметры линии снизу */
+    /*border-right: 1px solid rgb(0, 0, 0);*/
+    /* Параметры линии справа */
     padding-left: 10px;
     /* Отступ от линии слева до текста  */
     padding-bottom: 10px;
     /* Отступ от линии снизу до текста  */
+    padding-right: 10px;
+    /* Отступ от линии справа от текста  */
 }
 
-footer {
+.fot {
+    text-align: justify;
+    color: #800020;
     border-top: 2px solid black;
     margin-top: auto;
     padding-top: 10px;
     position: absolute;
     bottom: 5%;
-}
-
-.fot {
-    text-align: justify;
-    color: black;
 }
 
 .lin {
